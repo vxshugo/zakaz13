@@ -1,10 +1,10 @@
 import React from 'react'
 import "./catalog.css"
 import { Link } from 'react-router-dom'
-const Catalog = ({link, name, option, imgLink}) => {
+const Catalog = ({link, name, option}) => {
   return (
     <div className='catalog'>
-        <img src={imgLink}/>
+        <img src='https://media.discordapp.net/attachments/1050812814555615282/1103993925527687239/Rectangle_3.png'/>
         {option ? (
           <p>{option}</p>
         ) : <></>}
