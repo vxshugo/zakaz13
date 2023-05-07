@@ -3,7 +3,7 @@ import "./Footer.css"
 const Footer = () => {
   return (
     <div className='footer'>
-       <p>© 2023 Жұмысты атқарған Алыпысбаева С.А.</p> 
+       <p>© 2023 Жұмысты атқарған Махан Диана</p> 
     </div>
   )
 }

@@ -23,11 +23,11 @@ const SRS = () => {
             <div className="head">
                 <h4>СРС</h4>
             </div>
-            <div className="docView">
+            {/* <div className="docView">
                 <div className="wrapper">
                     <DocViewer className='my-doc-viewer-style' documents={docs} activeDocument={activeDocument} pluginRenderers={DocViewerRenderers} onDocumentChange={handleDocumentChange} />
                 </div>
-            </div>
+            </div> */}
             <Footer />
         </div>
     )

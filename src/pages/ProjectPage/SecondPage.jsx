@@ -5,9 +5,8 @@ import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 import Footer from "../../components/Footer/Footer"
 const SecondPage = () => {
 
-  const docs = [
-    { uri: require("./1618923821.pdf") }, // Local File
-    { uri: require("./Test.pdf") }, // Local File
+  const docs = [// Local File
+    { uri: require("./test.pdf") }, // Local File
   ];
 
   const [activeDocument, setActiveDocument] = useState(docs[0]);
