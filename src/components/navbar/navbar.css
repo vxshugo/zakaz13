@@ -2,7 +2,7 @@
   background-color: #1E2937;
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
@@ -12,7 +12,7 @@
 
 .navbar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   height: 80px;
   width: 100%;

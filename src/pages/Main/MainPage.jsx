@@ -4,9 +4,11 @@ import Footer from '../../components/Footer/Footer'
 import Main from '../../components/main/Main'
 import Navbar from '../../components/navbar/Navbar'
 import "./mainPage.css"
+import Header from '../../components/Header/Header'
 const MainPage = () => {
     return (
         <div>
+            <Header/>
             <Navbar />
             <Main />
             <div className='Catalog__block'>

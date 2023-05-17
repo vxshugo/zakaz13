@@ -7,7 +7,10 @@ import Footer from "../../components/Footer/Footer"
 const SRS = () => {
 
     const docs = [
-        { uri: require("./срс.pdf") }, // Local File
+        {
+            uri: require("./срс.pdf"),
+            fileName: " "
+        }, // Local File
     ];
 
     const [activeDocument, setActiveDocument] = useState(docs[0]);

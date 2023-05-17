@@ -7,7 +7,8 @@ import Footer from "../../components/Footer/Footer"
 const Test = () => {
 
     const docs = [
-        { uri: require("./Экз.сурактар.pdf") }, // Local File
+        { uri: require("./Экз.сурактар.pdf"),
+        fileName: " "  }, // Local File
     ];
 
     const [activeDocument, setActiveDocument] = useState(docs[0]);

@@ -1,7 +1,7 @@
 .main {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
 }
@@ -18,16 +18,18 @@
 }
 .main-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  text-align: center;
+  text-align:start;
   max-width: 1200px;
   padding: 0 2rem;
 }
 
 .main-content {
   padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.418);
+  width: 100%;
 }
 
 .main-text {

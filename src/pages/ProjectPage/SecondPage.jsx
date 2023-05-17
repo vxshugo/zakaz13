@@ -6,8 +6,14 @@ import Footer from "../../components/Footer/Footer"
 const SecondPage = () => {
 
   const docs = [
-    { uri: require("./1618923821.pdf") }, // Local File
-    { uri: require("./Test.pdf") }, // Local File
+    {
+      uri: require("./1618923821.pdf"),
+      fileName: " "
+    }, // Local File
+    {
+      uri: require("./Test.pdf"),
+      fileName: " "
+    }, // Local File
   ];
 
   const [activeDocument, setActiveDocument] = useState(docs[0]);
@@ -33,7 +39,7 @@ const SecondPage = () => {
           </button>
         </div> */}
         <div className="wrapper">
-          <DocViewer className='my-doc-viewer-style' documents={docs} activeDocument={activeDocument} pluginRenderers={DocViewerRenderers}  onDocumentChange={handleDocumentChange}/>
+          <DocViewer className='my-doc-viewer-style' documents={docs} activeDocument={activeDocument} pluginRenderers={DocViewerRenderers} onDocumentChange={handleDocumentChange} />
         </div>
       </div>
       <Footer />
