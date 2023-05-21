@@ -1,24 +1,24 @@
 import React, { useState } from 'react'
 import Navbar from '../../components/navbar/Navbar'
-import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 import Footer from "../../components/Footer/Footer"
+import Button from "./Button";
+import Quiz2 from "../../components/Test2/Test2";
+import Quiz3 from "../../components/Test2/Test3";
 
 
 const RP = () => {
+    const [showComponentA, setShowComponentA] = useState(false);
+    const [showComponentB, setShowComponentB] = useState(false);
 
-    const docs = [
-        {
-            uri: require("./РК.pdf"),
-            fileName: " "
-        }, // Local File
-    ];
-
-    const [activeDocument, setActiveDocument] = useState(docs[0]);
-
-    const handleDocumentChange = (document) => {
-        setActiveDocument(document);
+    const handleShowComponentA = () => {
+        setShowComponentA(true);
+        setShowComponentB(false);
     };
 
+    const handleShowComponentB = () => {
+        setShowComponentA(false);
+        setShowComponentB(true);
+    };
 
     return (
         <div className='lesson'>
@@ -28,7 +28,10 @@ const RP = () => {
             </div>
             <div className="docView">
                 <div className="wrapper">
-                    <DocViewer className='my-doc-viewer-style' documents={docs} activeDocument={activeDocument} pluginRenderers={DocViewerRenderers} onDocumentChange={handleDocumentChange} />
+                    <Button label="Тест РК 1" handleClick={handleShowComponentA} />
+                    <Button label="Тест РК 2" handleClick={handleShowComponentB} />
+                    {showComponentA && <Quiz2 />}
+                    {showComponentB && <Quiz3 />}
                 </div>
             </div>
             <Footer />

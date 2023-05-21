@@ -38,7 +38,7 @@ const Navbar = () => {
                     </li>
                     <li className="nav-item">
                         <a href="/razdel/srs" className="nav-link">
-                            СРС
+                            СӨЖ
                         </a>
                     </li>
                     <li className="nav-item">

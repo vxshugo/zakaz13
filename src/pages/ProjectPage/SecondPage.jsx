@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar/Navbar'
 import "./testPage.css"
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 import Footer from "../../components/Footer/Footer"
+import Quiz from "../../components/Test1/Test1";
 const SecondPage = () => {
 
   const docs = [
@@ -39,7 +40,7 @@ const SecondPage = () => {
           </button>
         </div> */}
         <div className="wrapper">
-          <DocViewer className='my-doc-viewer-style' documents={docs} activeDocument={activeDocument} pluginRenderers={DocViewerRenderers} onDocumentChange={handleDocumentChange} />
+          <Quiz/>
         </div>
       </div>
       <Footer />
